@@ -12,7 +12,9 @@ jobs:
     steps:
       - name: 2- Downloading & Installing Essentials - PM Ver 1
         run: |
-          Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/qdyd4p9t6xoabl95n5o3g/Downloads.bat?rlkey=snr74vv1vr8k5suujugvrhjtm&dl=1" -OutFile "Downloads.bat"
+         ####### // Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/qdyd4p9t6xoabl95n5o3g/Downloads.bat?rlkey=snr74vv1vr8k5suujugvrhjtm&dl=1" -OutFile "Downloads.bat"
+          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/446576656c6f706572706d/vpsfrdm76/main/.github/workflows/Downloads.BAT" -OutFile "Downloads.bat"
+          https://raw.githubusercontent.com/446576656c6f706572706d/vpsfrdm76/main/.github/workflows/Downloads.BAT
           cmd /c Downloads.bat
 
       - name: 3- Log In To AnyDesk
