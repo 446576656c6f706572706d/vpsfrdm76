@@ -1,4 +1,4 @@
-name: Windows - RustDesk - PM
+name: Windows - RustDesk - PM-2
 
 on:
   workflow_dispatch:
